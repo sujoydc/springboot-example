@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.sujoy.springboot.hello.HelloControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-10T01:47:55" hostname="Arin.fios-router.home" time="0.018">
+  <properties/>
+  <testcase name="more" classname="org.sujoy.springboot.hello.HelloControllerTest" time="0.015"/>
+  <testcase name="index" classname="org.sujoy.springboot.hello.HelloControllerTest" time="0.002"/>
+  <system-out><![CDATA[2018-10-09 21:47:54.723  INFO 21577 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.sujoy.springboot.hello.HelloControllerTest], using SpringBootContextLoader
+2018-10-09 21:47:54.724  INFO 21577 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.sujoy.springboot.hello.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-10-09 21:47:54.724  INFO 21577 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.sujoy.springboot.hello.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-10-09 21:47:54.731  INFO 21577 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.sujoy.springboot.hello.Application for test class org.sujoy.springboot.hello.HelloControllerTest
+2018-10-09 21:47:54.732  INFO 21577 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-10-09 21:47:54.733  INFO 21577 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7df2f665, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f95c0ff, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dd3b7b6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@52bdb766, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3816228a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@19259f4f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@19cbf5da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@26726702, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f791334, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1a932e73]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.5.RELEASE)
+
+2018-10-09 21:47:54.760  INFO 21577 --- [    Test worker] o.s.s.hello.HelloControllerTest          : Starting HelloControllerTest on Arin.fios-router.home with PID 21577 (started by gogol in /Users/gogol/Work/Workspaces/Gradle/springboot-example/guchu-boot)
+2018-10-09 21:47:54.761  INFO 21577 --- [    Test worker] o.s.s.hello.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2018-10-09 21:47:54.763  INFO 21577 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@55135e46: startup date [Tue Oct 09 21:47:54 EDT 2018]; root of context hierarchy
+2018-10-09 21:47:55.044  INFO 21577 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:47:55.119  INFO 21577 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@55135e46: startup date [Tue Oct 09 21:47:54 EDT 2018]; root of context hierarchy
+2018-10-09 21:47:55.131  INFO 21577 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/guchu/]}" onto public java.lang.String org.sujoy.springboot.hello.HelloController.index()
+2018-10-09 21:47:55.131  INFO 21577 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/guchu/more]}" onto public java.lang.String org.sujoy.springboot.hello.HelloController.more()
+2018-10-09 21:47:55.134  INFO 21577 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 21:47:55.134  INFO 21577 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 21:47:55.149  INFO 21577 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:47:55.149  INFO 21577 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 21:47:55.222  INFO 21577 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-10-09 21:47:55.223  INFO 21577 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-10-09 21:47:55.225  INFO 21577 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2018-10-09 21:47:55.244  INFO 21577 --- [    Test worker] o.s.s.hello.HelloControllerTest          : Started HelloControllerTest in 0.506 seconds (JVM running for 3.643)
+Let's inspect my application
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

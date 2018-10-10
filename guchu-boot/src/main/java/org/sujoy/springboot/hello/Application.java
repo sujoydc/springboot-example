@@ -22,7 +22,7 @@ public class Application {
             String[] beanDefinitionNames = ctx.getBeanDefinitionNames();
             Arrays.sort(beanDefinitionNames);
             for (String beanDefinitionName : beanDefinitionNames) {
-                System.out.println(beanDefinitionName);
+                //System.out.println(beanDefinitionName);
             }
         };
     }
